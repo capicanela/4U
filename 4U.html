@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa <3</title>
+    <style>
+        body {
+            background-color: #A77BCA; /* Tom pastel de roxo mais escuro */
+            font-family: 'Arial', sans-serif;
+            color: #FFFFFF; /* Texto branco suave */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative; /* Para posicionar as estrelas */
+            overflow: hidden; /* Esconde qualquer conteúdo que saia da área visível */
+            cursor: url('https://i.imgur.com/S4I44i8.png'), auto; /* Muda o cursor para uma florzinha */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px; /* Aumenta o espaçamento abaixo do título */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px; /* Aumenta o espaçamento abaixo do texto */
+            max-width: 600px; /* Aumenta a largura máxima do texto */
+            line-height: 1.6; /* Melhora a legibilidade */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #D291BC; /* Tom pastel de roxo */
+            padding: 15px 25px;
+            border-radius: 50%;
+            font-size: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #C87DAB; /* Escurece um pouco ao passar o mouse */
+        }
+
+        a::before {
+            content: '❤️'; /* Adiciona o coração no botão */
+        }
+
+        /* Estilo para as estrelas */
+        .star {
+            position: absolute;
+            background-color: #FFF;
+            border-radius: 50%;
+            opacity: 0.5;
+            z-index: 1; /* Certifica-se de que as estrelas estão acima do fundo */
+        }
+
+        @keyframes twinkling {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+        }
+
+        /* Criar estrelas com animação */
+        .star:nth-child(1) { 
+            width: 15px; height: 15px; 
+            top: 20%; left: 10%; 
+            animation: twinkling 1.5s infinite alternate; 
+        }
+        .star:nth-child(2) { 
+            width: 10px; height: 10px; 
+            top: 30%; left: 50%; 
+            animation: twinkling 2s infinite alternate; 
+        }
+        .star:nth-child(3) { 
+            width: 12px; height: 12px; 
+            top: 40%; left: 70%; 
+            animation: twinkling 1.8s infinite alternate; 
+        }
+        .star:nth-child(4) { 
+            width: 8px; height: 8px; 
+            top: 60%; left: 20%; 
+            animation: twinkling 2.5s infinite alternate; 
+        }
+        .star:nth-child(5) { 
+            width: 6px; height: 6px; 
+            top: 70%; left: 80%; 
+            animation: twinkling 2.2s infinite alternate; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Surpresa <3</h1>
+
+    <p>Amor, você é a pessoa mais incrível que já conheci, e cada dia ao seu lado me faz perceber o quanto sou abençoada por ter você na minha vida. Sua maneira de ser, seu carinho e sua paciência me fazem te amar mais a cada momento. Resolvi fazer algo diferente para mostrar o quanto você é especial para mim. Você ilumina meus dias e me inspira a ser a melhor versão de mim mesma. Obrigada por ser quem você é e por me fazer tão feliz!</p>
+
+    <a href="https://open.spotify.com/playlist/7MatUdSmxPvOAZ5vcUxvq4?si=42f1eeec5cf54c17" target="_blank"></a>
+
+    <!-- Adicionando as estrelas -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</body>
+</html>
